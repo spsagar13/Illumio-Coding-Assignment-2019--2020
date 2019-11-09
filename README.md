@@ -29,11 +29,11 @@ Inorder to exit the program, kindly enter *EXIT*
    
    Both files were read through program (instead of giving the values through command prompt).
 
-# algorithmic choices I’d like to point out
+# Algorithmic choices I’d like to point out
   To check the range of IP, every octet was converted into 3 digit integer numbers and then formed a final number. Then I compared them using normal comarison.
   That is, 192.16.0.1 becamse 1 192 016 000 001. The preceeding 1 was the logic I came up with to count the zeroes comes in the 1st octet.
   
-# refinements or optimizations that you would’ve implemented if I had more time
+# Refinements or optimizations that you would’ve implemented if I had more time
   1. A better logic for IP range match
   2. Although I converted the input set into 4 parts (to reduce the search initially itself. (Divide by 4)), since we have huge amount of data, the data reading I have implemented is not really efficient. 
   Since the port is a power of 2, a logic such that the - 2 power "the value" - can be directly accessed from the "list" that contain port and IP objects. (This does not mean that I will store a list entry with empty values, but I will create another container to store this mapping and use that to access the actual list that contains IP/IP range - making the lookup even faster)
