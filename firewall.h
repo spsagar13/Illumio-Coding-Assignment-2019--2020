@@ -1,3 +1,10 @@
+##################################################################
+# Author	: Sagar Surendran
+# Date Created	: Nov - 08 - 2019
+# Brief		: Header file for Firewall.cpp
+##################################################################
+
+
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -13,14 +20,14 @@ struct ip
 	long long start;
 	long long end;
 	bool range;
-}sip;
+};
 
 struct port
 {
 	int start;
 	int end;
 	bool range;
-}sport;
+};
 
 struct ip_port
 {
